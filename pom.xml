@@ -19,7 +19,7 @@
 
   <groupId>io.jenkins.plugins</groupId>
   <artifactId>okhttp-api</artifactId>
-  <version>${revision}-${changelist}</version>
+  <version>${revision}-172.vda_da_1feeb_c6e+reflect</version>
   <packaging>hpi</packaging>
   <name>OkHttp Plugin</name>
   <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
@@ -155,6 +155,14 @@
     <url>https://github.com/${gitHubRepo}</url>
     <tag>${scmTag}</tag>
   </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/sghill/okhttp-api-plugin</url>
+    </repository>
+  </distributionManagement>
 
   <build>
     <plugins>
